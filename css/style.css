@@ -127,6 +127,7 @@ body {
 .likes:hover {
 	background: #9edd87;
 	color: #008700;
+	transition: background 500ms;
 }
 
 .dislikes {
@@ -137,4 +138,5 @@ body {
 .dislikes:hover {
 	background: #fdd6d6;
 	color: #F65A5B;
+	transition: background 500ms;
 }
