@@ -97,8 +97,9 @@ app.controller('HomeController', ['$scope', function($scope) {
 
 	
 	/* ADD VARIABLES FOR STEP 3 HERE */
-	
-	
+	$scope.title="IMDB Maitrey's Top 8 Movies";
+	$scope.owner="Maitrey";
+	$scope.github="https://github.com/MaitreyPatel/is219s16Patel-p3";
 	
 	
 	
