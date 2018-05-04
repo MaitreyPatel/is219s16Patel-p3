@@ -97,7 +97,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 
 	
 	/* ADD VARIABLES FOR STEP 3 HERE */
-	$scope.title="IMDB Maitrey's Top 8 Movies";
+	$scope.title="IMDB + Maitrey's Top 8 Movies";
 	$scope.owner="Maitrey";
 	$scope.github="https://github.com/MaitreyPatel/is219s16Patel-p3";
 	
@@ -128,9 +128,9 @@ app.controller('HomeController', ['$scope', function($scope) {
 	};
 	
 	$scope.timeText = function (minutes){
-     $scope.hour = Math.floor(minutes / 60);
-     $scope.min = minutes % 60;
-     return $scope.hour + "h " + $scope.min + "m";
+     $scope.hours = Math.floor(minutes / 60);
+     $scope.mins = minutes % 60;
+     return $scope.hours + "h " + $scope.mins + "m";
    };
 	
 	
