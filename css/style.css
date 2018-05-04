@@ -133,3 +133,8 @@ body {
 	background-color: #f65a5b;
 	color: #FFFFFF;
 }
+
+.dislikes:hover {
+	background: #fdd6d6;
+	color: #F65A5B;
+}
