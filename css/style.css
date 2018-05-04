@@ -124,6 +124,10 @@ body {
 	background-color: #008700;
 	color: #FFFFFF;
 }
+.likes:hover {
+	background: #9edd87;
+	color: #008700;
+}
 
 
 
