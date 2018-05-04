@@ -107,7 +107,32 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-		
+	$scope.like=function(index){
+      $scope.movies[index].likes++;
+	};	
+	
+	$scope.dislike=function(index){
+      $scope.movies[index].dislikes++;
+	};
+	
+	$scope.posterClick = function(index){
+		if($scope.movies[index].posterindex === $scope.movies[index].posters.length){
+      $scope.movies[index].posterindex = 0;
+    }
+    else if($scope.movies[index].posterindex > $scope.movies[index].posters.length){
+      $scope.movies[index].posterindex = 0;
+    }
+		else{
+			$scope.movies[index].posterindex++;
+		}
+	};
+	
+	$scope.timeText = function (minutes){
+     $scope.hour = Math.floor(minutes / 60);
+     $scope.min = minutes % 60;
+     return $scope.hour + "h " + $scope.min + "m";
+   };
+	
 	
 	
 	
