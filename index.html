@@ -32,28 +32,30 @@
 
     <div class="main" ng-controller="HomeController">
       
-      <div class="container">
+		<div class="container">
 
-        <div class="col-md-6"> 
-            <div class="thumbnail">
+			<div class="col-md-6"> 
+				<div ng-repeat="themovie in movies">
+					<div class="thumbnail">
 
-					<img class="poster" />
-					<div class="imageInfo">%posterindex%</div>
+						<img class="poster" ng-src="{{themovie.posters[themovie.posterindex]}}"/>
+						<div class="imageInfo">{{"Poster " + (themovie.posterindex +1) + " of " + themovie.posters.length}}</div>
 					
-					<p class="title">%title% (%country%)</p> 
-					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> %iscore% </p>
-					<p class="runtime">Runtime: %runtime%</p> 
-					<p class="released">Released: %released% | Rated: %rating%</p>
-					<p class="websites">Websites: <a>%imdb%</a> | <a>%website%</a></p>
+						<p class="title">{{themovie.title}} ({{themovie.country}})</p>  
+						<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{themovie.iscore}} </p>
+						<p class="runtime">Runtime: {{themovie.runtime}}</p> 
+						<p class="released">Released: {{themovie.released}} | Rated: {{themovie.rating}}</p>
+						<p class="websites">Websites: <a>{{themovie.imdb}}</a> | <a>{{themovie.website}}</a></p>
 					
 		            <div class="social">
-		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> %like%</p>
-		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> %dislike%</p>
+		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{themovie.likes}}</p>
+		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{themovie.dislikes}}</p>
 		            </div>
-            </div> 
-        </div>
+					</div>
+				</div> 
+			</div>
 
-      </div>
+		</div>
     </div>
 
     <div class="footer">
