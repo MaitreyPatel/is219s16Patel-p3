@@ -88,7 +88,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
+	},
 	{ 
       title:	'13 Hours', 
       iscore:	7.3,
