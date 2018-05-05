@@ -89,7 +89,48 @@ app.controller('HomeController', ['$scope', function($scope) {
       dislikes:	101,
       posterindex: 0
 	}
-	
+	{ 
+      title:	'13 Hours', 
+      iscore:	7.3,
+      rating:	'R',
+      runtime:	135,
+      released:	new Date('2016', '01', '15'),
+      country:	'USA',
+      posters:	['img/13hours.jpg','img/13hours2.jpg','img/13hours3.jpg'],
+      imdb:		'https://www.imdb.com/title/tt4172430',
+      website:	'https://twitter.com/13hours',
+      likes:	900,
+      dislikes:	100,
+      posterindex: 0
+	},
+     { 
+      title:	'Transformers: Age of Extinction', 
+      iscore:	5.7,
+      rating:	'PG-13',
+      runtime:	147,
+      released:	new Date('2014', '06', '27'),
+      country:	'USA',
+      posters:	['img/transformer.jpg','img/transformer2.jpg','img/transformer3.jpg'],
+      imdb:		'https://www.imdb.com/title/tt2109248',
+      website:	'https://www.facebook.com/transformersmovie',
+      likes:	500,
+      dislikes:	150,
+      posterindex: 0
+	},
+     { 
+      title:	'John Wick: Chapter 2', 
+      iscore:	7.5,
+      rating:	'R',
+      runtime:	132,
+      released:	new Date('2017', '02', '10'),
+      country:	'USA',
+      posters:	['img/johnwick.jpg','img/johnwick2.jpg'],
+      imdb:		'https://www.imdb.com/title/tt4425200',
+      website:	'http://www.johnwick.movie/',
+      likes:	800,
+      dislikes:	90,
+      posterindex: 0
+	}
 	
   ];
 	
